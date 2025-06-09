@@ -1,0 +1,25 @@
+/* Custom scrollbars for both directions */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;  /* Vertical scrollbar width */
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1C1C1C; /* dark-bg */
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #002a99; /* darker primary blue */
+  border-radius: 4px;
+  border: 1px solid #2A2A2A; /* border-color */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #0037C1; /* primary-blue */
+}
+
+/* Corner between vertical and horizontal scrollbars */
+.custom-scrollbar::-webkit-scrollbar-corner {
+  background: #1C1C1C; /* dark-bg */
+}
