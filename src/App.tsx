@@ -1,13 +1,12 @@
 import './App.css';
+import SkipSizeSelector from './components/SkipSizeSelector';
 import StepSelector from './components/StepSelector';
 
 function App() {
   return (
     <div className="bg-black min-h-screen text-white py-8">
       <StepSelector />
-      <h1 className="text-3xl text-center">
-        Hello world!
-      </h1>
+      <SkipSizeSelector />
     </div>
   );
 }

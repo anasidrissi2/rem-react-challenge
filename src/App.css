@@ -1,7 +1,7 @@
 /* Custom scrollbars for both directions */
 .custom-scrollbar::-webkit-scrollbar {
-  width: 8px;  /* Vertical scrollbar width */
-  height: 8px; /* Horizontal scrollbar height */
+  width: 4px;  /* Vertical scrollbar width */
+  height: 4px; /* Horizontal scrollbar height */
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
@@ -22,4 +22,12 @@
 /* Corner between vertical and horizontal scrollbars */
 .custom-scrollbar::-webkit-scrollbar-corner {
   background: #1C1C1C; /* dark-bg */
+}
+
+.btn-primary {
+  @apply bg-primary-blue text-white font-medium py-2 px-4 rounded hover:bg-secondary-blue transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-gray-700 text-white font-medium py-2 px-4 rounded hover:bg-gray-600 transition-colors;
 }
