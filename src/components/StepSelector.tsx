@@ -1,6 +1,6 @@
 function StepSelector() {
   return (
-    <div className="flex max-w-7xl justify-center overflow-x-auto custom-scrollbar py-4 px-4 bg-primary-blue/10 border backdrop-blur-md border-blue-950 mx-2 rounded-md justify-self-center">
+    <div className="flex max-w-7xl justify-center overflow-x-auto custom-scrollbar py-4 px-4 bg-primary-blue/10 border backdrop-blur-md border-blue-950 mx-auto rounded-md">
       <div className="flex items-center space-x-4">
         <button className="flex items-center whitespace-nowrap transition-colors text-primary-blue cursor-pointer hover:text-primary-blue">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-map-pin w-6 h-6"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
