@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# REM React Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+This project is a skip hire booking interface built with React and TypeScript. It allows users to select skip sizes, view details, and proceed through a step-based booking process. The UI is responsive and leverages modern React patterns and Tailwind CSS for styling.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or newer recommended)
+- npm (v9 or newer recommended)
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### Build for production
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm run build
+```
 
-### `npm run build`
+The production-ready files will be in the `build` directory.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For any issues, please check your Node.js and npm versions or delete `node_modules` and run `npm install` again.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Approach
 
-### `npm run eject`
+- **Component-based architecture:** The UI is split into reusable components for skip selection, preview, and step actions.
+- **API integration:** Data is fetched from a provided link for available skips by location.
+- **Responsive design:** Both mobile and desktop layouts are handled with adaptive components.
+- **User experience:** Placeholder and loading states are provided for a smooth experience, and accessibility is considered in interactive elements and by replacing the grid with a item selector, the number of click/scrolls required has been reduced to submit to next step, I've added sense of size on the UI for quick visual reference.
+- **Separation of concerns:** Logic for fetching data, displaying options, and handling actions is encapsulated in dedicated components and services.
+- **If not broken don't fix it:** I reused some of original elements and since this step-based reservation process, I made sure to keep the implimentation UI / UX inline with the rest of the flow only droping the grid in favor of a simple selector (assuming skips are defined by their sizes)
+- **Minimal footprint** since this one and data fairly easy to handle , I used simple state managements with only useState() this could be enhanced to use dedicated state management libraries such Redux or Zustand
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Where to go next
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- If I were to continue on this , I would make SkipSizeOption more condense on mobile and desktop , or to enhance it further to a more visual design like using skip shapes as options containers 
+- Use a state management library like Redux , Zustand
+- Refactor components hardcoded values (on structure and css)
+- Skip previewer could use a description in the bottom of right section , giving the user practical informations on usage and requirementss before ordering
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
